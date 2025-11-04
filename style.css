@@ -201,3 +201,34 @@ footer {
     height: 40px;
   }
 }
+.pricing-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background-color: #1E5631;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2f8f46;
+  transform: translateY(-2px);
+}
+
+.download-btn {
+  background-color: #76B947;
+  color: #fff;
+}
+
+.download-btn:hover {
+  background-color: #4ca24a;
+}
