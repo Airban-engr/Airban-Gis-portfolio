@@ -1,0 +1,226 @@
+/* ==============================
+   Victor Morton-Bruce | GIS Portfolio Stylesheet
+   Theme: Geo-Dashboard (Deep Greens + Map Texture)
+   ============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ---------- GLOBAL RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f7f1;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: linear-gradient(135deg, #133d20 0%, #1E5631 50%, #4CAF50 100%);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  margin: 15px auto;
+  max-width: 700px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+header a.button {
+  background: #A4DE02;
+  color: #133d20;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+header a.button:hover {
+  background: #c6f55f;
+  transform: scale(1.05);
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 90px 10%;
+  text-align: center;
+}
+
+section h2 {
+  color: #1E5631;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #A4DE02;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+section p {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* ---------- PROJECT CARDS ---------- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.card {
+  background: #ffffffd8;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-left: 6px solid #1E5631;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #1E5631;
+  margin-bottom: 8px;
+}
+
+.card a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  color: #133d20;
+}
+
+/* ---------- SERVICES ---------- */
+.services {
+  background: #e7f3e4;
+  border-radius: 15px;
+  padding: 50px 40px;
+  box-shadow: inset 0 0 20px rgba(19, 61, 32, 0.1);
+}
+
+.services h3 {
+  color: #133d20;
+  margin-bottom: 10px;
+}
+
+.services p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services a {
+  color: #1E5631;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  background: #133d20;
+  color: white;
+  padding: 80px 10%;
+}
+
+.contact h2 {
+  color: #A4DE02;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.contact a {
+  color: #A4DE02;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #0f2d17;
+  color: #e6ffe3;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 60px 6%;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .services {
+    padding: 30px;
+  }
+}
