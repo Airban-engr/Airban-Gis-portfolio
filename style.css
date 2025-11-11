@@ -232,3 +232,78 @@ footer {
 .download-btn:hover {
   background-color: #4ca24a;
 }
+/* ===== Cadastral Section ===== */
+.cadastral-section {
+  background: #f5f5f5;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastral-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  align-items: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.cadastral-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ddd;
+}
+
+.cadastral-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cadastral-text h2 {
+  color: #1a472a;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cadastral-text p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.cadastral-text .caption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #1a472a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .cadastral-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cadastral-image img {
+    max-width: 90%;
+  }
+}
