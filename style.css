@@ -307,3 +307,16 @@ footer {
     max-width: 90%;
   }
 }
+.site-header {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+}
+
+.header-banner {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #1a472a;
+  display: block;
+}
