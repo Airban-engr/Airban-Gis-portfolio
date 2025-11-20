@@ -320,3 +320,10 @@ footer {
   border-bottom: 3px solid #1a472a;
   display: block;
 }
+/* Mobile banner fallback */
+@media (max-width: 768px) {
+  .header-banner {
+    content: url("header_banner_mobile.png");
+    border-bottom: 2px solid #1a472a;
+  }
+}
