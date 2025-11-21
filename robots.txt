@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://airban-engr.github.io/sitemap.xml
+Sitemap: https://airban-engr.github.io/Airban-Gis-portfolio/sitemap.xml
+
