@@ -37,4 +37,27 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/gis-specialist-ghana.html/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/land-surveyor-ghana.html/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/cadastral-plans-ghana.html/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/topograhic-survey-ghana.html/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
