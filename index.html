@@ -108,26 +108,67 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Victor Morton-Bruce",
-  "jobTitle": "GIS Specialist & Geospatial Engineer",
-  "url": "https://airban-engr.github.io/",
-  "email": "airbanengineers@gmail.com",
-  "sameAs": [
-    "https://linkedin.com/in/victor-morton-bruce-168625146",
-    "https://www.instagram.com/airbanengineers"
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Airban Engineers"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Accra",
-    "addressCountry": "Ghana"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://airban-engr.github.io/Airban-Gis-portfolio/#org",
+      "name": "Airban Engineers",
+      "url": "https://airban-engr.github.io/Airban-Gis-portfolio/",
+      "email": "airbanengineers@gmail.com",
+      "logo": "https://airban-engr.github.io/Airban-Gis-portfolio/header_banner_high_quality.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Accra",
+        "addressCountry": "Ghana"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Greater Accra Region"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Central Region"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://airban-engr.github.io/Airban-Gis-portfolio/#person",
+      "name": "Victor Morton-Bruce",
+      "jobTitle": "GIS Specialist & Geospatial Engineer",
+      "url": "https://airban-engr.github.io/Airban-Gis-portfolio/",
+      "email": "airbanengineers@gmail.com",
+      "worksFor": {
+        "@id": "https://airban-engr.github.io/Airban-Gis-portfolio/#org"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/victor-morton-bruce-168625146",
+        "https://www.instagram.com/airbanengineers"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://airban-engr.github.io/Airban-Gis-portfolio/#website",
+      "name": "Airban GIS Portfolio",
+      "url": "https://airban-engr.github.io/Airban-Gis-portfolio/"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://airban-engr.github.io/Airban-Gis-portfolio/#webpage",
+      "url": "https://airban-engr.github.io/Airban-Gis-portfolio/",
+      "name": "Airban GIS Operations Hub – GIS & Surveying Services",
+      "isPartOf": {
+        "@id": "https://airban-engr.github.io/Airban-Gis-portfolio/#website"
+      },
+      "about": {
+        "@id": "https://airban-engr.github.io/Airban-Gis-portfolio/#org"
+      }
+    }
+  ]
 }
 </script>
+
 
 </head>
 <body>
