@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- MAIN PORTFOLIO HOME PAGE -->
   <url>
     <loc>https://airban-engr.github.io/Airban-Gis-portfolio/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- GIS SPECIALIST PAGE -->
+  <url>
+    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/gis-specialist-ghana.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- CADASTRAL PLANS PAGE -->
+  <url>
+    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/cadastral-plans-ghana.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- TOPOGRAPHIC SURVEY PAGE -->
+  <url>
+    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/topographic-survey-ghana.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- LAND SURVEYING SERVICES PAGE -->
+  <url>
+    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/land-surveyor-ghana.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- DEMO PROJECTS -->
   <url>
     <loc>https://airban-engr.github.io/ghana-districts-demo/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://airban-engr.github.io/accra-flood-map/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://airban-engr.github.io/cape-coast-tourism-map/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://airban-engr.github.io/kumasi-air-quality/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://airban-engr.github.io/ghana-agriculture-dashboard/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/gis-specialist-ghana.html/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/land-surveyor-ghana.html/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/cadastral-plans-ghana.html/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://airban-engr.github.io/Airban-Gis-portfolio/topograhic-survey-ghana.html/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>
