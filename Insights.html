@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Insights | Airban Engineering</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body{
+      background:#f5f6f7;
+    }
+    .insights-wrap{
+      width:min(1100px,95%);
+      margin:0 auto;
+      padding:60px 0;
+    }
+    .insights-head{
+      margin-bottom:40px;
+    }
+    .insights-head h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+    .insights-head p{
+      color:#666;
+      max-width:650px;
+      line-height:1.7;
+    }
+
+    .article-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:24px;
+    }
+
+    .article-card{
+      background:white;
+      border-radius:12px;
+      padding:24px;
+      border:1px solid #e3e3e3;
+      transition:.2s ease;
+    }
+
+    .article-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .article-card h3{
+      margin-bottom:10px;
+      font-size:22px;
+    }
+
+    .article-card p{
+      color:#555;
+      line-height:1.6;
+      margin-bottom:16px;
+    }
+
+    .article-card a{
+      text-decoration:none;
+      font-weight:600;
+      color:#0a5c3f;
+    }
+
+    .back-home{
+      margin-top:50px;
+      display:inline-block;
+      text-decoration:none;
+      color:#666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="insights-wrap">
+
+    <div class="insights-head">
+      <h1>Insights & Articles</h1>
+      <p>
+        Practical guidance on land surveys, cadastral plans, and GIS workflows in Ghana.
+        These articles help clients understand the process before engaging services.
+      </p>
+    </div>
+
+    <div class="article-grid">
+
+      <!-- Article 1 -->
+      <div class="article-card">
+        <h3>Why You Must Survey Land Before Buying</h3>
+        <p>
+          The most important step buyers skip — and why it leads to disputes,
+          wrong locations, and financial loss.
+        </p>
+        <a href="articles/why-survey-land-before-buying.html">Read Article →</a>
+      </div>
+
+      <!-- Future Articles (leave placeholders ready) -->
+      <div class="article-card">
+        <h3>Topographic Surveys Explained</h3>
+        <p>
+          When you need one, what it includes, and how it supports site development.
+        </p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+      <div class="article-card">
+        <h3>Cadastral Plans for Land Registration</h3>
+        <p>
+          Understanding certified plans and why accuracy matters in documentation.
+        </p>
+        <a href="#">Coming Soon</a>
+      </div>
+
+    </div>
+
+    <a class="back-home" href="index.html">← Back to Home</a>
+
+  </div>
+
+</body>
+</html>
