@@ -327,3 +327,33 @@ footer {
     border-bottom: 2px solid #1a472a;
   }
 }
+.insights-header {
+  text-align:center;
+  padding:60px 20px;
+  background:#f4f6f8;
+}
+
+.insights-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+  gap:30px;
+  padding:40px;
+}
+
+.insight-card {
+  border:1px solid #ddd;
+  padding:25px;
+  border-radius:8px;
+  background:white;
+  transition:0.3s;
+}
+
+.insight-card:hover {
+  transform:translateY(-5px);
+}
+
+.insight-card a {
+  color:#0a58ca;
+  font-weight:bold;
+  text-decoration:none;
+}
