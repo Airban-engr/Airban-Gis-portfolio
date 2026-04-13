@@ -671,3 +671,12 @@ ul {
     padding: 12px 16px;
   }
 }
+
+.footer-logo {
+  max-width: 280px;
+  margin-bottom: 16px;
+}
+
+.contact-quick-actions {
+  margin-top: 24px;
+}
