@@ -787,3 +787,18 @@ ul {
   border-radius: 12px;
   color: #111;
 }
+
+.light-info-box {
+  background: #eef8ee;
+  border-left: 5px solid #55b947;
+  color: #101820;
+}
+
+.light-info-box strong {
+  color: #0b3d18;
+}
+
+.light-info-box a {
+  color: #1f8f32;
+  font-weight: 700;
+}
