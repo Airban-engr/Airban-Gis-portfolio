@@ -50,10 +50,20 @@
     }
 
     .packages-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 28px;
-    }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+    .package-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.package-card ul {
+  flex-grow: 1;
+}
 
     .package-card {
       background: #fff;
@@ -190,6 +200,18 @@
       border: 1px solid #24b05a;
       color: #24b05a;
     }
+@media (max-width: 1000px) {
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+}
+    
   </style>
 </head>
 
