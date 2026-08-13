@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Large-Scale Cadastral Survey in Dromankese, Bono East | Airban Engineering</title>
+  <meta name="description" content="See how Airban Engineering surveyed and monumented 474.08 acres across two parcels in Dromankese, Bono East using static GNSS, CORS post-processing and Ghana National Grid coordinates.">
+  <link rel="canonical" href="https://airbanengineers.com/dromankese-cadastral-survey-bono-east.html">
+
+  <meta property="og:title" content="474.08 Acres Surveyed in Dromankese, Bono East | Airban Engineering">
+  <meta property="og:description" content="A real field-to-draft-plan cadastral survey case study covering two parcels, 23 boundary stations, permanent monumentation and static GNSS.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://airbanengineers.com/dromankese-cadastral-survey-bono-east.html">
+  <meta property="og:image" content="https://airbanengineers.com/assets/dromankese/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Large-Scale Cadastral Survey & Boundary Delineation — Dromankese, Bono East",
+    "description":"Airban Engineering field case study covering 474.08 acres across two parcels in Dromankese, Bono East.",
+    "datePublished":"2026-08-13",
+    "author":{"@type":"Organization","name":"Airban Engineering","url":"https://airbanengineers.com/"},
+    "publisher":{"@type":"Organization","name":"Airban Engineering","url":"https://airbanengineers.com/"},
+    "mainEntityOfPage":"https://airbanengineers.com/dromankese-cadastral-survey-bono-east.html",
+    "about":["Cadastral Survey","Boundary Delineation","Static GNSS","Ghana National Grid","Bono East","Land Surveying Ghana"]
+  }
+  </script>
+
+  <style>
+    :root{
+      --green:#79f36a;--green2:#24b05a;--green3:#2f7d32;
+      --ink:#111513;--muted:#616c65;--line:#dce5df;--soft:#f5f8f6;
+      --black:#0b0f0d;--paper:#fff;--max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.77rem;font-weight:850;letter-spacing:.11em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--green3)}
+    .text-link{font-weight:800;color:#168746;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+    .text-link:hover{color:#0c6332}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;font-weight:850;transition:.2s ease}
+    .btn-primary{background:var(--green);color:#071107}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-outline{border:1px solid rgba(255,255,255,.32);color:#fff}
+    .btn-outline:hover{background:rgba(255,255,255,.08)}
+
+    header.site{position:sticky;top:0;z-index:30;background:rgba(11,15,13,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08);color:#fff}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:950;letter-spacing:.05em}
+    .navlinks{display:flex;align-items:center;gap:25px;color:#d4ddd7;font-size:.92rem}
+    .navlinks a:hover{color:#fff}
+
+    .crumbs{background:#101612;color:#b9c4bd;border-bottom:1px solid rgba(255,255,255,.06)}
+    .crumbs .wrap{display:flex;gap:8px;align-items:center;padding-top:12px;padding-bottom:12px;font-size:.79rem}
+    .crumbs a{color:#dce5df}
+    .crumbs span{opacity:.65}
+
+    .hero{position:relative;isolation:isolate;overflow:hidden;background:var(--black);color:#fff;padding:88px 0 80px}
+    .hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.15;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='500'%3E%3Cg fill='none' stroke='%2379f36a' stroke-width='1'%3E%3Cpath d='M-40 90 C120 0 260 180 430 90 S760 10 960 120'/%3E%3Cpath d='M-60 150 C110 60 260 240 430 150 S760 70 970 180'/%3E%3Cpath d='M-80 220 C100 130 260 310 430 220 S770 140 990 250'/%3E%3Cpath d='M-80 300 C100 210 270 390 450 300 S780 220 990 330'/%3E%3C/g%3E%3C/svg%3E");background-size:cover}
+    .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center}
+    .hero h1{font-size:clamp(2.9rem,6vw,5.7rem);line-height:.94;letter-spacing:-.058em;margin:18px 0 24px}
+    .hero h1 span{color:var(--green)}
+    .hero p{font-size:1.1rem;color:#cad4ce;max-width:720px}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+    .hero-media{position:relative}
+    .hero-media img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:34px;box-shadow:0 42px 85px rgba(0,0,0,.38)}
+    .hero-tag{position:absolute;left:-28px;bottom:28px;background:#fff;color:var(--ink);padding:18px 20px;border-radius:19px;box-shadow:0 24px 60px rgba(0,0,0,.18);max-width:310px}
+    .hero-tag b{display:block;font-size:1.85rem;line-height:1;color:var(--green3)}
+    .hero-tag small{display:block;color:var(--muted);margin-top:7px}
+
+    .stats{position:relative;z-index:4;margin-top:-34px}
+    .stats-grid{display:grid;grid-template-columns:repeat(5,1fr);background:#fff;border:1px solid var(--line);border-radius:25px;box-shadow:0 24px 65px rgba(0,0,0,.10);overflow:hidden}
+    .stat{padding:24px 22px;border-right:1px solid var(--line)}
+    .stat:last-child{border-right:0}
+    .stat b{display:block;font-size:1.43rem}
+    .stat span{display:block;color:var(--muted);font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;margin-top:2px}
+
+    section{padding:88px 0}
+    .section-head{display:grid;grid-template-columns:.88fr 1.12fr;gap:50px;align-items:end;margin-bottom:38px}
+    .section-head h2{font-size:clamp(2.15rem,4vw,3.85rem);line-height:1;letter-spacing:-.046em;margin:10px 0 0}
+    .section-head p{margin:0;color:var(--muted);font-size:1.03rem}
+
+    .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .story-card{padding:30px;border:1px solid var(--line);border-radius:24px;background:#fff}
+    .story-card.dark{background:var(--black);color:#fff;border-color:var(--black)}
+    .story-card h3{font-size:1.55rem;line-height:1.15;margin:8px 0 10px}
+    .story-card p{margin:0;color:var(--muted)}
+    .story-card.dark p{color:#c9d3cd}
+    .story-card strong{font-size:.78rem;letter-spacing:.11em;color:var(--green3)}
+    .story-card.dark strong{color:var(--green)}
+
+    .gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-auto-rows:255px;gap:16px}
+    .gallery figure{position:relative;margin:0;overflow:hidden;border-radius:23px;background:#ddd}
+    .gallery figure:first-child{grid-row:span 2}
+    .gallery img{width:100%;height:100%;object-fit:cover}
+    .gallery figcaption{position:absolute;left:13px;right:13px;bottom:13px;padding:10px 12px;border-radius:12px;background:rgba(7,13,9,.80);backdrop-filter:blur(9px);color:#fff;font-size:.81rem}
+
+    .method{background:var(--soft)}
+    .method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .method-step{padding:25px;border:1px solid var(--line);border-radius:21px;background:#fff}
+    .method-step strong{display:block;color:var(--green3);font-size:.76rem;letter-spacing:.11em;margin-bottom:16px}
+    .method-step h3{font-size:1.2rem;margin:0 0 8px}
+    .method-step p{font-size:.91rem;color:var(--muted);margin:0}
+
+    .finding{background:var(--black);color:#fff}
+    .finding-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:60px;align-items:center}
+    .finding-big{font-size:clamp(4.5rem,11vw,9rem);font-weight:950;line-height:.8;letter-spacing:-.075em;color:var(--green)}
+    .finding-big small{display:block;margin-top:22px;font-size:1rem;line-height:1.4;letter-spacing:.02em;font-weight:600;color:#c9d3cd}
+    .finding h2{font-size:clamp(2.2rem,4.4vw,4.2rem);line-height:.98;letter-spacing:-.052em;margin:10px 0 20px}
+    .finding p{font-size:1.04rem;color:#c9d3cd}
+    .quote{border-left:3px solid var(--green);padding:7px 0 7px 20px;margin-top:25px;color:#fff!important;font-weight:780;font-size:1.1rem}
+
+    .plans{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .plan-card{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#fff}
+    .plan-card img{width:100%;aspect-ratio:16/11;object-fit:cover;object-position:center;background:#fafafa}
+    .plan-copy{padding:23px}
+    .plan-copy h3{font-size:1.5rem;margin:0 0 5px}
+    .plan-copy p{margin:0;color:var(--muted)}
+    .pill{display:inline-block;margin:13px 7px 0 0;padding:7px 10px;border-radius:999px;background:var(--soft);font-size:.77rem;font-weight:820}
+
+    .internal-note{margin-top:28px;padding:22px 24px;border-radius:18px;border:1px solid #cfe2d4;background:#f7fbf8}
+    .internal-note strong{color:var(--green3)}
+    .internal-note p{margin:5px 0 0;color:var(--muted)}
+
+    .lesson-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .lesson{padding:27px;border:1px solid var(--line);border-radius:22px}
+    .lesson span{font-size:.73rem;color:var(--green3);font-weight:900;letter-spacing:.11em}
+    .lesson h3{font-size:1.2rem;margin:10px 0}
+    .lesson p{margin:0;color:var(--muted)}
+
+    .related{background:var(--soft)}
+    .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .related-panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px}
+    .related-panel h3{font-size:1.5rem;margin:0 0 18px}
+    .related-list{display:grid;gap:13px}
+    .related-list a{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);font-weight:780}
+    .related-list a:last-child{border-bottom:0}
+    .related-list a span:last-child{color:var(--green3)}
+
+    .cta{background:linear-gradient(145deg,#0c110e,#16251b);color:#fff}
+    .cta-box{display:flex;justify-content:space-between;gap:32px;align-items:center}
+    .cta h2{font-size:clamp(2.25rem,5vw,4.45rem);line-height:.98;letter-spacing:-.052em;margin:8px 0 18px;max-width:780px}
+    .cta p{color:#cad4ce;max-width:650px}
+
+    footer{padding:34px 0;background:#070a08;color:#aeb8b1;font-size:.86rem}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+    @media(max-width:900px){
+      .navlinks{display:none}
+      .hero-grid,.section-head,.finding-grid{grid-template-columns:1fr}
+      .hero-tag{left:14px}
+      .stats-grid{grid-template-columns:repeat(2,1fr)}
+      .stat{border-bottom:1px solid var(--line)}
+      .story-grid,.plans,.related-grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .gallery figure:first-child{grid-row:span 1;grid-column:span 2}
+      .method-grid{grid-template-columns:1fr 1fr}
+      .lesson-grid{grid-template-columns:1fr}
+      .cta-box{display:block}
+    }
+    @media(max-width:560px){
+      .wrap{width:calc(100% - 24px)}
+      .hero{padding-top:65px}
+      .stats-grid,.method-grid,.gallery{grid-template-columns:1fr}
+      .gallery figure:first-child{grid-column:auto}
+      .stat{border-right:0}
+    }
+  </style>
+</head>
+
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/">AIRBAN ENGINEERING</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="services.html">Services</a>
+      <a href="/#projects">Projects</a>
+      <a href="insights.html">Insights</a>
+      <a href="packages.html">Packages</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="crumbs" aria-label="Breadcrumb">
+  <div class="wrap">
+    <a href="/">Home</a><span>/</span>
+    <a href="/#projects">Projects</a><span>/</span>
+    <span>Dromankese Cadastral Survey</span>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Project Case Study · Bono East</span>
+      <h1>474.08 acres.<br><span>Measured, monumented, documented.</span></h1>
+      <p>
+        A large-scale <a class="text-link" href="services.html">cadastral survey and boundary delineation</a>
+        assignment in Dromankese, executed through permanent monumentation, static GNSS observation,
+        CORS-referenced processing and draft cadastral plan preparation.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#results">View Survey Results</a>
+        <a class="btn btn-outline" href="/#contact">Discuss a Land Survey</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="assets/dromankese/hero.jpg" alt="Airban Engineering static GNSS fieldwork during the Dromankese cadastral survey">
+      <div class="hero-tag">
+        <b>23 stations</b>
+        <small>established and observed across two large parcels</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap stats">
+  <div class="stats-grid">
+    <div class="stat"><b>474.08 ac</b><span>Combined survey area</span></div>
+    <div class="stat"><b>2 parcels</b><span>Boundary assignments</span></div>
+    <div class="stat"><b>23</b><span>Boundary stations</span></div>
+    <div class="stat"><b>Static GNSS</b><span>Observation method</span></div>
+    <div class="stat"><b>Bono East</b><span>Project region</span></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">The Assignment</span>
+        <h2>A boundary survey where the acreage could not be assumed.</h2>
+      </div>
+      <p>
+        The assignment began with approximate parcel extents rather than definitive surveyed areas.
+        Airban's responsibility was not to “find” a predetermined acreage, but to establish, monument and
+        measure the boundary positions presented on the ground and allow the survey evidence to determine the result.
+        This is why professional <a class="text-link" href="services.html">boundary and cadastral surveying</a> matters.
+      </p>
+    </div>
+
+    <div class="story-grid">
+      <article class="story-card">
+        <strong>01 · MOBILISATION</strong>
+        <h3>Eight hours from Cape Coast to the project area.</h3>
+        <p>
+          A four-person field team mobilised through Kumasi and Techiman with an ALPHA GEO dual-frequency GNSS
+          receiver, approximately 40 precast monuments and materials for in-situ Type C monument construction.
+        </p>
+      </article>
+      <article class="story-card dark">
+        <strong>02 · FIELD REALITY</strong>
+        <h3>One parcel was still not physically established.</h3>
+        <p>
+          The parcel expected to be approximately 165 acres had not been demarcated before Airban arrived.
+          The programme was adjusted while the boundary positions were identified in the presence of the seller's
+          survey representative.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap gallery">
+    <figure><img src="assets/dromankese/road.jpg" alt="Unpaved access road to the Dromankese survey site"><figcaption>Remote access formed part of the actual field logistics and programme.</figcaption></figure>
+    <figure><img src="assets/dromankese/mobilisation.jpg" alt="Airban Engineering field mobilisation materials"><figcaption>Mobilisation: monuments, materials and field equipment.</figcaption></figure>
+    <figure><img src="assets/dromankese/team.jpg" alt="Airban Engineering team and local representatives"><figcaption>Boundary identification required field coordination with local representatives.</figcaption></figure>
+    <figure><img src="assets/dromankese/insitu.jpg" alt="In-situ Type C monument construction"><figcaption>In-situ Type C construction added flexibility to the monumentation strategy.</figcaption></figure>
+    <figure><img src="assets/dromankese/monument.jpg" alt="Completed cadastral boundary monument"><figcaption>Completed monument prior to static GNSS observation and recording.</figcaption></figure>
+  </div>
+</section>
+
+<section class="method">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Survey Methodology</span>
+        <h2>From field monument to draft cadastral plan.</h2>
+      </div>
+      <p>
+        Airban used a traceable field-to-office workflow so each station could move from physical establishment
+        to GNSS observation, post-processing, coordinate verification and plotting. The work ultimately supports
+        the type of cadastral documentation required during formal land processes; see our
+        <a class="text-link" href="land-registration-process-ghana.html">guide to land registration in Ghana</a>.
+      </p>
+    </div>
+
+    <div class="method-grid">
+      <article class="method-step"><strong>STEP 01</strong><h3>Boundary establishment</h3><p>Positions identified with local representatives and monumented using a hybrid precast and in-situ Type C approach.</p></article>
+      <article class="method-step"><strong>STEP 02</strong><h3>Static GNSS occupation</h3><p>Stations occupied using the ALPHA GEO dual-frequency receiver, typically for approximately 30 minutes per station.</p></article>
+      <article class="method-step"><strong>STEP 03</strong><h3>CORS processing</h3><p>Raw observations converted to RINEX and processed in Topcon Tools against reference data from CORS station SGBE202501.</p></article>
+      <article class="method-step"><strong>STEP 04</strong><h3>Plotting & computation</h3><p>Processed Ghana National Grid coordinates imported into AutoCAD for plotting, closure checks and acreage computation.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="finding">
+  <div class="wrap finding-grid">
+    <div class="finding-big">
+      +70.60
+      <small>additional acres measured on the parcel originally expected to be approximately 165 acres</small>
+    </div>
+    <div>
+      <span class="eyebrow">The Defining Finding</span>
+      <h2>The acreage was an output — not a target.</h2>
+      <p>
+        By approximately the seventh station, the field team had already recognised that the boundary being presented
+        materially exceeded the anticipated extent. The survey nevertheless continued along the positions identified
+        on the ground.
+      </p>
+      <p class="quote">
+        Professional surveying does not force field evidence to match an expected acreage.
+        It measures the boundary and lets the evidence establish the result.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Survey Results</span>
+        <h2>Two parcels. 474.08 acres combined.</h2>
+      </div>
+      <p>
+        These are draft project-stage outputs prepared from completed field observations and post-processing.
+        Professional/statutory certification remains the next project stage.
+      </p>
+    </div>
+
+    <div class="plans">
+      <article class="plan-card">
+        <img src="assets/dromankese/parcel-238.jpg" alt="Draft survey geometry for the 238.48 acre parcel in Dromankese">
+        <div class="plan-copy">
+          <h3>Parcel 01 — 238.48 acres</h3>
+          <p>96.51 hectares · 11 boundary stations</p>
+          <span class="pill">Scale 1:2500</span><span class="pill">Ghana National Grid</span><span class="pill">Draft Plan</span>
+        </div>
+      </article>
+
+      <article class="plan-card">
+        <img src="assets/dromankese/parcel-235.jpg" alt="Draft survey geometry for the 235.60 acre parcel in Dromankese">
+        <div class="plan-copy">
+          <h3>Parcel 02 — 235.60 acres</h3>
+          <p>95.34 hectares · 12 boundary stations</p>
+          <span class="pill">Scale 1:2500</span><span class="pill">Ghana National Grid</span><span class="pill">Draft Plan</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="internal-note">
+      <strong>Technical Project Record — AE-FJ-001</strong>
+      <p>
+        This assignment is documented within Airban Engineering's Field Journal system, where field observations,
+        technical decisions and project lessons are retained as part of the Airban Method. The public case study
+        presents the client-relevant project story while the detailed technical record remains part of Airban's
+        internal project-control system.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:12px">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">What the Project Changed</span>
+        <h2>Experience became procedure.</h2>
+      </div>
+      <p>
+        Dromankese improved how Airban approaches future large-acreage mobilisation, boundary readiness and
+        material scope changes. Those lessons now strengthen the systems used on subsequent assignments.
+      </p>
+    </div>
+
+    <div class="lesson-grid">
+      <article class="lesson"><span>AIRBAN METHOD · 01</span><h3>Boundary readiness before mobilisation</h3><p>For substantial assignments, the intended parcel should be reasonably identifiable and authorised representatives confirmed before full mobilisation.</p></article>
+      <article class="lesson"><span>AIRBAN METHOD · 02</span><h3>Scope changes acknowledged early</h3><p>Material changes in estimated acreage should be recorded in writing and commercially reviewed before field deployment where practicable.</p></article>
+      <article class="lesson"><span>AIRBAN METHOD · 03</span><h3>Field evidence comes first</h3><p>Expected acreage guides planning. It does not dictate the boundary ultimately measured, documented and presented for professional review.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="related">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Continue Exploring</span>
+        <h2>From project evidence to your own land decision.</h2>
+      </div>
+      <p>
+        If this project reflects a challenge you are facing, these Airban services and resources are the most
+        relevant next places to continue.
+      </p>
+    </div>
+
+    <div class="related-grid">
+      <div class="related-panel">
+        <h3>Related Services</h3>
+        <div class="related-list">
+          <a href="services.html"><span>Boundary & Cadastral Surveys</span><span>→</span></a>
+          <a href="packages.html"><span>Landowner's Boundary Protection Package</span><span>→</span></a>
+          <a href="packages.html"><span>Cadastral Survey & Registration Package</span><span>→</span></a>
+          <a href="/#contact"><span>Request a Project Quote</span><span>→</span></a>
+        </div>
+      </div>
+
+      <div class="related-panel">
+        <h3>Related Insights</h3>
+        <div class="related-list">
+          <a href="why-survey-before-buying.html"><span>Why You Should Survey Before Buying Land</span><span>→</span></a>
+          <a href="land-survey-process-ghana.html"><span>The Land Survey Process in Ghana</span><span>→</span></a>
+          <a href="how-much-does-land-survey-cost-ghana.html"><span>How Much Does a Land Survey Cost in Ghana?</span><span>→</span></a>
+          <a href="land-registration-process-ghana.html"><span>Land Registration Process in Ghana</span><span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta-box">
+    <div>
+      <span class="eyebrow">Need certainty before you develop, buy or register land?</span>
+      <h2>Survey the boundary before the assumptions become expensive.</h2>
+      <p>
+        Airban Engineering provides cadastral surveying, boundary verification, topographic surveying,
+        setting-out and land documentation support across Ghana.
+      </p>
+    </div>
+    <div>
+      <a class="btn btn-primary" href="/#contact">Request a Survey Consultation</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>AIRBAN ENGINEERING</strong> · Professional Surveying & Geospatial Services in Ghana</div>
+    <div><a href="/#projects">← Back to Selected Projects</a> · Project Record AE-FJ-001</div>
+  </div>
+</footer>
+</body>
+</html>
