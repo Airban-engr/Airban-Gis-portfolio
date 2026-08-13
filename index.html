@@ -373,55 +373,458 @@
   </div>
 </section>
 
-    <section class="projects section" id="projects">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label">Selected Work</p>
-          <h2>Featured projects and mapping work</h2>
-          <p class="section-subtext">
-            A snapshot of geospatial work, mapping outputs and digital projects that reflect our technical capability.
-          </p>
-        </div>
+    <!-- FEATURED PROJECTS SECTION -->
+<section class="projects section" id="projects">
 
-        <div class="projects-grid">
-          <article class="project-card">
-            <img src="project-1.jpg" alt="Ghana agriculture dashboard preview" />
-            <div class="project-content">
-              <h3>Ghana Agriculture Dashboard</h3>
-              <p>Interactive dashboard presenting agricultural insights through clear geospatial visualization.</p>
-              <a href="https://airban-engr.github.io/Ghana-agriculture-dashboard/" class="text-link" target="_blank" rel="noopener">View Project</a>
-            </div>
-          </article>
+  <style>
+    /* ================================
+       AIRBAN FEATURED PROJECT
+       ================================ */
 
-          <article class="project-card">
-            <img src="project-2.jpg" alt="Accra flood map preview" />
-            <div class="project-content">
-              <h3>Accra Flood Map</h3>
-              <p>Interactive mapping work focused on environmental and urban flood risk visualization.</p>
-              <a href="https://airban-engr.github.io/accra-flood-map/" class="text-link" target="_blank" rel="noopener">View Project</a>
-            </div>
-          </article>
+    .featured-project {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 0;
+      margin-bottom: 48px;
 
-          <article class="project-card">
-            <img src="project-3.JPG" alt="Kumasi air quality preview" />
-            <div class="project-content">
-              <h3>Kumasi Air Quality</h3>
-              <p>A web-based geospatial storytelling project built around environmental data communication.</p>
-              <a href="https://airban-engr.github.io/Kumasi-air-quality/" class="text-link" target="_blank" rel="noopener">View Project</a>
-            </div>
-          </article>
+      background: #0f1411;
+      border-radius: 28px;
+      overflow: hidden;
 
-          <article class="project-card">
-            <img src="project-4.JPG" alt="Cape Coast tourism map preview" />
-            <div class="project-content">
-              <h3>Cape Coast Tourism Map</h3>
-              <p>A location-based mapping project designed to present tourism sites in a clear digital experience.</p>
-              <a href="https://airban-engr.github.io/cape-coast-tourism-map/" class="text-link" target="_blank" rel="noopener">View Project</a>
-            </div>
-          </article>
-        </div>
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
+    }
+
+    .featured-project-image {
+      min-height: 500px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured-project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+    }
+
+    .featured-project-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(15, 20, 17, 0.04),
+          rgba(15, 20, 17, 0.30)
+        );
+    }
+
+    .featured-project-content {
+      padding: 52px 48px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      color: #ffffff;
+    }
+
+    .featured-project-label {
+      color: #79f36a;
+
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+
+      margin-bottom: 16px;
+    }
+
+    .featured-project-content h3 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+
+      color: #ffffff;
+
+      margin-bottom: 18px;
+    }
+
+    .featured-project-content > p {
+      color: #cbd5cf;
+      line-height: 1.75;
+
+      margin-bottom: 24px;
+    }
+
+    .featured-project-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 12px;
+
+      margin: 8px 0 28px;
+    }
+
+    .featured-project-stat {
+      padding: 15px 16px;
+
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 14px;
+
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .featured-project-stat strong {
+      display: block;
+
+      color: #79f36a;
+
+      font-size: 1.18rem;
+      margin-bottom: 3px;
+    }
+
+    .featured-project-stat span {
+      color: #cbd5cf;
+
+      font-size: 0.78rem;
+    }
+
+    .featured-project-link {
+      align-self: flex-start;
+
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+
+      color: #0b120d;
+      background: #79f36a;
+
+      padding: 13px 20px;
+
+      border-radius: 999px;
+
+      font-weight: 800;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .featured-project-link:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 12px 28px rgba(121, 243, 106, 0.18);
+    }
+
+    .other-projects-head {
+      margin: 10px 0 28px;
+    }
+
+    .other-projects-head h3 {
+      font-size: 1.6rem;
+      color: #111111;
+
+      margin-bottom: 6px;
+    }
+
+    .other-projects-head p {
+      color: #5f6b63;
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+
+      .featured-project {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-project-image {
+        min-height: 380px;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .featured-project-content {
+        padding: 34px 24px;
+      }
+
+      .featured-project-image {
+        min-height: 300px;
+      }
+
+      .featured-project-stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+  </style>
+
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="section-label">
+        Selected Work
+      </p>
+
+      <h2>
+        Selected Engineering & Geospatial Projects
+      </h2>
+
+      <p class="section-subtext">
+        Real field assignments, survey outputs and geospatial projects
+        that demonstrate Airban Engineering's technical capability,
+        field experience and professional approach.
+      </p>
+
+    </div>
+
+
+    <!-- =========================
+         FLAGSHIP PROJECT
+         AE-FJ-001
+         ========================= -->
+
+    <article class="featured-project">
+
+      <div class="featured-project-image">
+
+        <img
+          src="assets/dromankese/hero.jpg"
+          alt="Airban Engineering cadastral survey fieldwork in Dromankese, Bono East"
+        />
+
       </div>
-    </section>
+
+
+      <div class="featured-project-content">
+
+        <p class="featured-project-label">
+          Featured Project · AE-FJ-001
+        </p>
+
+        <h3>
+          Large-Scale Cadastral Survey &
+          Boundary Delineation
+        </h3>
+
+        <p>
+          A major cadastral surveying assignment in Dromankese,
+          Bono East involving permanent boundary monumentation,
+          static GNSS observations, CORS-referenced processing
+          and preparation of draft cadastral plans across two
+          large parcels.
+        </p>
+
+
+        <div class="featured-project-stats">
+
+          <div class="featured-project-stat">
+            <strong>474.08 Acres</strong>
+            <span>Combined surveyed extent</span>
+          </div>
+
+          <div class="featured-project-stat">
+            <strong>2 Parcels</strong>
+            <span>Boundary assignments</span>
+          </div>
+
+          <div class="featured-project-stat">
+            <strong>23 Stations</strong>
+            <span>Established and observed</span>
+          </div>
+
+          <div class="featured-project-stat">
+            <strong>Static GNSS</strong>
+            <span>CORS-referenced survey</span>
+          </div>
+
+        </div>
+
+
+        <a
+          href="dromankese-cadastral-survey-bono-east.html"
+          class="featured-project-link"
+        >
+          View Full Case Study →
+        </a>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- =========================
+         OTHER GEOSPATIAL PROJECTS
+         ========================= -->
+
+    <div class="other-projects-head">
+
+      <h3>
+        Other Geospatial Projects
+      </h3>
+
+      <p>
+        Digital mapping, spatial analysis and geospatial
+        visualisation work developed by Airban Engineering.
+      </p>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+      <!-- GHANA AGRICULTURE DASHBOARD -->
+
+      <article class="project-card">
+
+        <img
+          src="project-1.jpg"
+          alt="Ghana agriculture dashboard preview"
+        />
+
+        <div class="project-content">
+
+          <h3>
+            Ghana Agriculture Dashboard
+          </h3>
+
+          <p>
+            Interactive dashboard presenting agricultural insights
+            through clear geospatial visualization.
+          </p>
+
+          <a
+            href="https://airban-engr.github.io/Ghana-agriculture-dashboard/"
+            class="text-link"
+            target="_blank"
+            rel="noopener"
+          >
+            View Project
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ACCRA FLOOD MAP -->
+
+      <article class="project-card">
+
+        <img
+          src="project-2.jpg"
+          alt="Accra flood map preview"
+        />
+
+        <div class="project-content">
+
+          <h3>
+            Accra Flood Map
+          </h3>
+
+          <p>
+            Interactive mapping work focused on environmental
+            and urban flood risk visualization.
+          </p>
+
+          <a
+            href="https://airban-engr.github.io/accra-flood-map/"
+            class="text-link"
+            target="_blank"
+            rel="noopener"
+          >
+            View Project
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- KUMASI AIR QUALITY -->
+
+      <article class="project-card">
+
+        <img
+          src="project-3.JPG"
+          alt="Kumasi air quality preview"
+        />
+
+        <div class="project-content">
+
+          <h3>
+            Kumasi Air Quality
+          </h3>
+
+          <p>
+            A web-based geospatial storytelling project
+            built around environmental data communication.
+          </p>
+
+          <a
+            href="https://airban-engr.github.io/Kumasi-air-quality/"
+            class="text-link"
+            target="_blank"
+            rel="noopener"
+          >
+            View Project
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- CAPE COAST TOURISM MAP -->
+
+      <article class="project-card">
+
+        <img
+          src="project-4.JPG"
+          alt="Cape Coast tourism map preview"
+        />
+
+        <div class="project-content">
+
+          <h3>
+            Cape Coast Tourism Map
+          </h3>
+
+          <p>
+            A location-based mapping project designed to present
+            tourism sites in a clear digital experience.
+          </p>
+
+          <a
+            href="https://airban-engr.github.io/cape-coast-tourism-map/"
+            class="text-link"
+            target="_blank"
+            rel="noopener"
+          >
+            View Project
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
 
     <section class="coverage section">
       <div class="container coverage-box">
