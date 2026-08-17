@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Land Surveyors Determine Acreage in Ghana | Airban Engineering</title>
+<meta name="description" content="How is the actual acreage of land determined? Follow a real 474.08-acre Airban cadastral survey from boundary identification and GNSS observation to coordinates, geometry and calculated area.">
+<link rel="canonical" href="https://airbanengineers.com/how-land-surveyors-determine-acreage-ghana.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Land Surveyors Determine the Actual Acreage of Land in Ghana">
+<meta property="og:description" content="Boundary first. Acreage follows. See how professional cadastral surveying turns physical boundary stations into a survey-derived land area.">
+<meta property="og:url" content="https://airbanengineers.com/how-land-surveyors-determine-acreage-ghana.html">
+<meta property="og:image" content="https://airbanengineers.com/hero-gnss.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"How Do Land Surveyors Determine the Actual Acreage of Land in Ghana?",
+  "description":"A practical Airban Engineering insight explaining how boundary identification, monumentation, GNSS observations, CORS post-processing, coordinates and parcel geometry are used to determine survey-derived acreage.",
+  "datePublished":"2026-08-16",
+  "dateModified":"2026-08-16",
+  "mainEntityOfPage":"https://airbanengineers.com/how-land-surveyors-determine-acreage-ghana.html",
+  "author":{"@type":"Organization","name":"Airban Engineering","url":"https://airbanengineers.com/"},
+  "publisher":{"@type":"Organization","name":"Airban Engineering","url":"https://airbanengineers.com/"},
+  "image":"https://airbanengineers.com/hero-gnss.jpg",
+  "about":["Land Surveying","Cadastral Surveying","Acreage","GNSS","Boundary Surveying","Ghana National Grid","Ghana"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://airbanengineers.com/"},
+    {"@type":"ListItem","position":2,"name":"Insights","item":"https://airbanengineers.com/insights.html"},
+    {"@type":"ListItem","position":3,"name":"How Land Surveyors Determine Acreage in Ghana","item":"https://airbanengineers.com/how-land-surveyors-determine-acreage-ghana.html"}
+  ]
+}
+</script>
+
+<style>
+:root{
+ --black:#090d0b;--ink:#111713;--green:#6bd44a;--green2:#2e8a38;--muted:#68736c;
+ --soft:#f5f8f5;--line:#dce4dd;--paper:#fff;--max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff;color:var(--ink);line-height:1.75}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),calc(100% - 38px));margin:auto}
+.site-header{position:sticky;top:0;z-index:30;background:rgba(9,13,11,.96);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand img{height:48px;width:auto}
+.nav-links{display:flex;gap:24px;align-items:center;font-weight:700;color:#d7dfda;font-size:.93rem}
+.nav-links a:hover,.nav-links .active{color:var(--green)}
+.quote-btn{background:var(--green);color:#071008;padding:11px 17px;border-radius:999px;font-weight:900}
+.breadcrumbs{background:#111814;color:#b8c2bc;font-size:.8rem}
+.breadcrumbs .container{padding:11px 0;display:flex;gap:8px;flex-wrap:wrap}
+.breadcrumbs a{color:#e0e7e2}
+.hero{background:var(--black);color:#fff;padding:72px 0 66px;overflow:hidden;position:relative}
+.hero:before{content:"";position:absolute;inset:0;opacity:.16;background:radial-gradient(circle at 70% 30%,#2d7739 0,transparent 35%),linear-gradient(120deg,transparent 0 55%,rgba(107,212,74,.11))}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center}
+.kicker{display:inline-block;color:var(--green);font-size:.78rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.7rem,5.7vw,5.3rem);line-height:.98;letter-spacing:-.055em;margin:14px 0 20px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero .sub{font-size:1.12rem;color:#cbd5cf;max-width:710px}
+.hero-note{margin-top:28px;padding:19px 21px;border-left:3px solid var(--green);background:rgba(255,255,255,.05);border-radius:0 14px 14px 0;font-size:1.05rem;font-weight:760}
+.hero-img{border-radius:28px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.hero-img img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.article{padding:78px 0}
+.article-grid{display:grid;grid-template-columns:minmax(0,760px) 280px;gap:58px;align-items:start}
+.article h2{font-size:clamp(1.85rem,3vw,2.65rem);line-height:1.13;letter-spacing:-.03em;margin:56px 0 14px}
+.article h3{font-size:1.35rem;margin:35px 0 10px}
+.article p{font-size:1.04rem;color:#2d3831}
+.article strong{color:#131b16}
+.lead{font-size:1.22rem!important;line-height:1.72}
+.callout{padding:24px 26px;border:1px solid #cfe0d0;border-radius:20px;background:#f6fbf5;margin:30px 0}
+.callout strong{display:block;font-size:1.17rem;color:var(--green2);margin-bottom:4px}
+.flow-inline{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:23px 0;font-weight:850}
+.flow-inline span{padding:7px 11px;background:#eef6ed;border-radius:999px}
+.flow-inline b{color:var(--green2)}
+.figure{margin:32px 0}
+.figure img{width:100%;border-radius:20px;border:1px solid var(--line)}
+.figure figcaption{font-size:.83rem;color:var(--muted);margin-top:9px}
+.two-img{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
+.two-img figure{margin:0}
+.sidebar{position:sticky;top:102px}
+.sidebox{border:1px solid var(--line);border-radius:20px;padding:22px;background:#fff;margin-bottom:18px}
+.sidebox h3{margin:0 0 13px;font-size:1rem}
+.sidebox a{display:block;padding:9px 0;border-bottom:1px solid var(--line);font-size:.9rem;font-weight:760;color:#263129}
+.sidebox a:last-child{border-bottom:0}
+.side-stat{background:var(--black);color:#fff;border-radius:20px;padding:23px}
+.side-stat span{display:block;color:#bfc8c2;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em}
+.side-stat strong{display:block;color:var(--green);font-size:2rem;line-height:1;margin:8px 0}
+.case{background:var(--black);color:#fff;border-radius:26px;padding:32px;margin:45px 0}
+.case .kicker{margin-bottom:8px}
+.case h2{color:#fff;margin:0 0 14px}
+.case p{color:#cdd6d0}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+.metric{padding:18px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.04)}
+.metric span{font-size:.74rem;color:#b8c3bc;text-transform:uppercase;letter-spacing:.06em}
+.metric strong{display:block;color:var(--green);font-size:1.48rem;margin-top:5px}
+.table-wrap{overflow-x:auto;margin:25px 0}
+table{width:100%;border-collapse:collapse;font-size:.96rem}
+th,td{padding:13px 14px;border:1px solid var(--line);text-align:left}
+th{background:#eef6ed}
+.link{color:#1c7d36;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.field-principle{padding:34px 30px;background:linear-gradient(140deg,#101813,#17221a);color:#fff;border-radius:26px;margin:46px 0;text-align:center}
+.field-principle p{color:#fff;font-size:1.35rem;font-weight:850;line-height:1.5;margin:0}
+.field-principle p span{color:var(--green)}
+.related{background:var(--soft);padding:68px 0}
+.related h2{font-size:2.2rem;margin:0 0 22px}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.related-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.related-card span{font-size:.72rem;color:var(--green2);font-weight:900;text-transform:uppercase;letter-spacing:.09em}
+.related-card h3{font-size:1.08rem;line-height:1.25;margin:8px 0 10px}
+.related-card a{font-weight:850;color:#1c7d36}
+.cta{background:#0b100d;color:#fff;padding:68px 0}
+.cta-grid{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+.cta h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.02;margin:0 0 14px}
+.cta p{color:#cbd5cf;margin:0;max-width:700px}
+.cta a{background:var(--green);color:#081009;padding:15px 22px;border-radius:999px;font-weight:900}
+footer{background:#060906;color:#9eaaa2;padding:28px 0;font-size:.84rem}
+.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:900px){
+ .nav-links{display:none}.hero-grid{grid-template-columns:1fr}.hero-img img{aspect-ratio:16/10}
+ .article-grid{grid-template-columns:1fr}.sidebar{position:static}.related-grid{grid-template-columns:1fr}.cta-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+ .container{width:calc(100% - 24px)}.hero{padding-top:52px}.two-img,.metrics{grid-template-columns:1fr}.brand img{height:40px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+ <div class="container nav">
+   <a class="brand" href="/"><img src="logo.jpg" alt="Airban Engineering"></a>
+   <nav class="nav-links" aria-label="Main navigation">
+     <a href="/">Home</a>
+     <a href="services.html">Services</a>
+     <a href="packages.html">Packages</a>
+     <a href="/#projects">Projects</a>
+     <a class="active" href="insights.html">Insights</a>
+     <a href="/#contact">Contact</a>
+     <a class="quote-btn" href="/#contact">Get a Quote</a>
+   </nav>
+ </div>
+</header>
+
+<div class="breadcrumbs">
+ <div class="container"><a href="/">Home</a><span>›</span><a href="insights.html">Insights</a><span>›</span><span>How Surveyors Determine Acreage</span></div>
+</div>
+
+<main>
+<section class="hero">
+ <div class="container hero-grid">
+   <div>
+     <span class="kicker">Airban Insight · Cadastral Surveying</span>
+     <h1>How Do Land Surveyors Determine the <em>Actual Acreage</em> of Land in Ghana?</h1>
+     <p class="sub">From boundary identification and monumentation to GNSS observations, CORS post-processing, coordinate geometry and area computation.</p>
+     <div class="hero-note">Boundary first. Acreage follows. The professional result comes from the measured geometry of the boundary surveyed—not from forcing the fieldwork to match an expected number.</div>
+   </div>
+   <div class="hero-img"><img src="hero-gnss.jpg" alt="Airban Engineering static GNSS observation during cadastral survey fieldwork in Ghana"></div>
+ </div>
+</section>
+
+<section class="article">
+<div class="container article-grid">
+<article>
+<p class="lead">A parcel may be described as 50 acres, 100 acres or 200 acres. But until its boundary has been properly identified and surveyed, that figure can still be an expectation rather than a survey-derived area.</p>
+
+<p>During a recent large-scale cadastral survey undertaken by Airban Engineering in Dromankese, Bono East Region, one of two parcels had been expected to contain approximately <strong>165 acres</strong>. After the boundary presented on the ground was monumented, observed, processed and plotted, the calculated area was <strong>235.60 acres</strong>.</p>
+
+<p>The difference was <strong>70.60 acres — approximately 42.8% greater than expected.</strong> The survey had not created additional land. It had measured the area enclosed by the boundary that was actually presented and surveyed.</p>
+
+<div class="callout"><strong>The key principle</strong>A surveyor does not enter an expected acreage into a GNSS receiver and then search for a boundary that produces that number. The boundary is established and measured first; the acreage follows from the resulting geometry.</div>
+
+<figure class="figure">
+ <img src="workflow.jpg" alt="Airban Engineering workflow showing boundary identification, monumentation, GNSS observation, CORS post-processing, coordinate derivation, boundary geometry and area computation">
+ <figcaption>The Airban workflow from physical boundary identification to survey-derived acreage.</figcaption>
+</figure>
+
+<h2 id="acreage-output">1. Acreage Is an Output, Not the Starting Point</h2>
+<p>An acre is a unit of area. It describes how much surface area is enclosed by a boundary, but it does not independently tell the surveyor where that boundary is located.</p>
+
+<div class="flow-inline"><span>Boundary</span><b>→</b><span>Geometry</span><b>→</b><span>Area</span></div>
+
+<p>Two parcels can contain the same acreage while having completely different shapes, dimensions and boundary configurations. For that reason, a stated acreage cannot substitute for the actual identification and measurement of the parcel boundary.</p>
+
+<h2 id="boundary">2. Everything Begins With the Boundary</h2>
+<p>Before GNSS observations, coordinates or CAD drawings can mean anything, the surveyor must understand <strong>what land is actually being presented for survey</strong>. Depending on the assignment, that may involve existing plans, physical boundary evidence, known monuments and information from the appropriate landowner, family representative or other authorised person.</p>
+
+<p>A surveyor should not manufacture a boundary simply to obtain the acreage that someone expects. The relevant boundary must first be identified or established; the measurements then determine the area it encloses. This is also why professional <a class="link" href="services.html">boundary and cadastral surveying</a> begins with parcel definition rather than area computation.</p>
+
+<h2 id="monumentation">3. Monumentation Turns the Boundary Into Physical Reference Points</h2>
+<p>Once the appropriate boundary positions have been identified, survey stations can be established at the corners and changes in direction. Where permanent monumentation forms part of the assignment, these stations provide recoverable physical reference points on the ground.</p>
+
+<div class="two-img">
+ <figure class="figure"><img src="type-c-monument.jpg" alt="Real Type C survey monument used as a cadastral boundary reference"><figcaption>A real Type C survey control/monument in the field.</figcaption></figure>
+ <figure class="figure"><img src="monumentation.jpg" alt="Airban Engineering in-situ cadastral monument construction"><figcaption>In-situ monument construction during the Dromankese assignment.</figcaption></figure>
+</div>
+
+<p>During the Dromankese project, Airban used both precast monuments and in-situ Type C construction. The objective in either case was the same: to create durable physical references for the boundary positions established in the field.</p>
+
+<h2 id="gnss">4. GNSS Observations Turn Stations Into Measured Positions</h2>
+<p>Establishing a monument tells us where a boundary station physically exists. GNSS observation allows that station to be assigned a measured coordinate position within the survey reference framework.</p>
+
+<p>For the Dromankese assignment, Airban used an ALPHA GEO dual-frequency receiver in <strong>static mode</strong>, with typical station occupations of approximately 30 minutes. These observations collected the satellite data required for subsequent post-processing.</p>
+
+<figure class="figure">
+ <img src="field-team.jpg" alt="Airban Engineering field team during large-acreage cadastral surveying in Dromankese Bono East">
+ <figcaption>Field execution during the Dromankese large-acreage cadastral assignment.</figcaption>
+</figure>
+
+<h2 id="processing">5. Raw GNSS Data Is Not Yet a Cadastral Plan</h2>
+<p>The fieldwork may be complete, but the survey is not. Static GNSS observations still need to be referenced and processed before they become usable survey-station coordinates.</p>
+
+<div class="flow-inline"><span>Raw GNSS</span><b>→</b><span>RINEX</span><b>→</b><span>CORS Reference</span><b>→</b><span>Topcon Tools</span><b>→</b><span>Coordinates</span></div>
+
+<p>For AE-FJ-001, raw receiver observations were downloaded, converted to RINEX, and processed against reference data from CORS station <strong>SGBE202501</strong>. The resulting station positions were handled in the Ghana National Grid for the cadastral workflow. The project technical record documented processed RMS values generally within the adopted <strong>0.1–0.4</strong> project range.</p>
+
+<div class="two-img">
+ <figure class="figure"><img src="topcon-observations.jpg" alt="Topcon Tools GNSS observation processing evidence from the Airban Dromankese survey"><figcaption>Project processing evidence showing GNSS observations and solution information.</figcaption></figure>
+ <figure class="figure"><img src="topcon-map.jpg" alt="Topcon Tools map view showing CORS reference and processed survey observations"><figcaption>CORS-to-field observation processing geometry in Topcon Tools.</figcaption></figure>
+</div>
+
+<h2 id="geometry">6. Coordinates Become Boundary Geometry</h2>
+<p>Once reliable station coordinates are available, they can be plotted in their correct sequence to reproduce digitally the parcel boundary established on the ground. For the Dromankese project, the processed points were imported into AutoCAD for plotting and review.</p>
+
+<p>The surveyor then considers the parcel configuration, station relationships and relevant closure or consistency checks before relying on the geometry for area computation and plan preparation. Software performs calculations, but professional review is still required to confirm that the geometry properly represents the field observations.</p>
+
+<h2 id="area">7. Only Then Is the Enclosed Area Calculated</h2>
+<p>Once the verified station coordinates define the closed parcel polygon, the enclosed area can be calculated and expressed in square metres, hectares, acres or the unit appropriate to the assignment.</p>
+
+<div class="callout"><strong>The GNSS receiver did not “measure 235.60 acres.”</strong>The observations helped determine station coordinates. Those coordinates defined the parcel geometry. The area enclosed by that geometry produced the survey-derived acreage.</div>
+
+<div class="case" id="field-example">
+ <span class="kicker">Field Example · AE-FJ-001</span>
+ <h2>When an Expected ~165 Acres Surveyed at 235.60 Acres</h2>
+ <p>One parcel in Airban Engineering's Dromankese assignment had initially been described as approximately 165 acres. It had not been physically demarcated before the field team's arrival. Once the boundary positions were presented, Airban monumented and surveyed them.</p>
+
+ <div class="metrics">
+  <div class="metric"><span>Expected</span><strong>~165 ac</strong></div>
+  <div class="metric"><span>Survey-derived</span><strong>235.60 ac</strong></div>
+  <div class="metric"><span>Difference</span><strong>+70.60 ac</strong></div>
+ </div>
+
+ <p>By approximately the seventh boundary station, the field team could already see that the extent being presented materially exceeded the preliminary expectation. The survey was not stopped at 165 acres, nor were the boundary positions adjusted to make the resulting area correspond with that figure.</p>
+ <p><strong>Airban did not “find” 70.60 extra acres.</strong> The survey established that the boundary positions presented and measured on the ground enclosed approximately 235.60 acres. Questions of ownership, entitlement or acquisition relating to any difference are separate from the geometric result of the survey.</p>
+ <p><a class="link" href="dromankese-cadastral-survey-bono-east.html">Explore the complete 474.08-acre Dromankese project case study →</a></p>
+</div>
+
+<h2 id="second-parcel">8. It Wasn't the Only Parcel</h2>
+<p>The second parcel involved in the same assignment had been described shortly before mobilisation as approximately 225 acres and produced a survey-derived area of 238.48 acres.</p>
+
+<div class="table-wrap">
+<table>
+ <thead><tr><th>Parcel</th><th>Pre-field expectation</th><th>Survey-derived area</th><th>Difference</th></tr></thead>
+ <tbody>
+  <tr><td>Parcel 01</td><td>~225 acres</td><td><strong>238.48 acres / 96.51 ha</strong></td><td>+13.48 acres</td></tr>
+  <tr><td>Parcel 02</td><td>~165 acres</td><td><strong>235.60 acres / 95.34 ha</strong></td><td>+70.60 acres</td></tr>
+  <tr><td><strong>Combined</strong></td><td><strong>~390 acres</strong></td><td><strong>474.08 acres / 191.85 ha</strong></td><td><strong>+84.08 acres</strong></td></tr>
+ </tbody>
+</table>
+</div>
+
+<div class="two-img">
+ <figure class="figure"><img src="parcel-238.jpg" alt="Draft survey plan geometry for 238.48 acre Dromankese parcel"><figcaption>Parcel 01 — draft project-stage survey output, 238.48 acres / 96.51 hectares.</figcaption></figure>
+ <figure class="figure"><img src="parcel-235.jpg" alt="Draft survey plan geometry for 235.60 acre Dromankese parcel"><figcaption>Parcel 02 — draft project-stage survey output, 235.60 acres / 95.34 hectares.</figcaption></figure>
+</div>
+
+<p><em>These drawings are project-stage draft outputs. Professional/statutory certification and final approved deliverables remain separate project stages.</em></p>
+
+<h2 id="real-acreage">9. So Which Figure Is the “Real” Acreage?</h2>
+<p>For surveying purposes, the calculated area comes from the measured geometry of the boundary surveyed. But there is an important limitation: <strong>survey-derived area does not by itself determine legal ownership of every part of the land enclosed.</strong></p>
+
+<p>Surveying establishes geometry. Ownership and interests also depend on the appropriate land documentation, searches and statutory processes. This is why a boundary survey and an <a class="link" href="official-search-report-ghana.html">Official Search Report</a> answer different but complementary questions during land due diligence.</p>
+
+<h2 id="why-differ">10. Why Can Stated and Surveyed Acreage Differ?</h2>
+<p>A difference does not automatically mean that somebody has acted improperly. The original figure may simply have been an approximation; the parcel may never have been comprehensively surveyed; monuments may be missing or misunderstood; older survey information may have limitations; or the boundary presented during the new survey may differ from earlier assumptions.</p>
+
+<p>The correct professional response is to understand the discrepancy rather than immediately interpret it as fraud, encroachment or proof of additional ownership.</p>
+
+<h2 id="large-land">11. Why This Matters Before You Buy Large Land</h2>
+<p>Imagine negotiating a major land transaction based solely on the statement that a parcel is approximately 100 acres. What happens if the surveyed boundary encloses 82 acres? Or 127 acres? The financial and planning implications can be substantial.</p>
+
+<p>The lesson is not “never trust the seller.” The lesson is simpler:</p>
+<div class="callout"><strong>Do not confuse a described acreage with a measured parcel.</strong>Where significant land value or development decisions are involved, allow the boundary evidence and professional survey to establish the geometry before treating an approximate acreage as a fact.</div>
+
+<p>For buyers, this sits naturally alongside broader due diligence. Airban's <a class="link" href="why-survey-before-buying.html">guide to surveying before buying land</a> explains why the field verification should come before relying entirely on documents, while the <a class="link" href="land-registration-process-ghana.html">land registration guide</a> explains what follows during the documentation process.</p>
+
+<h2 id="readiness">12. What Should a Landowner or Buyer Have Ready?</h2>
+<p>Where available, provide the surveyor with existing site plans or survey information, known monuments, relevant documents and access to a person who genuinely understands the property boundary. For substantial parcels, boundary readiness should be confirmed before a full field mobilisation wherever practicable.</p>
+
+<p>This is particularly important where teams, equipment, monumentation materials and travel logistics must be mobilised over considerable distances.</p>
+
+<div class="field-principle">
+ <p>The surveyor does not make the land fit the expected acreage.<br><span>The surveyor measures the boundary presented on the ground and determines the area it encloses.</span></p>
+</div>
+
+<h2 id="after-acreage">13. What Happens After Acreage Is Determined?</h2>
+<p>Area computation is not necessarily the end of a cadastral assignment. Depending on the scope, the processed boundary information may then support draft plan preparation, professional review, certification and subsequent land documentation or registration work.</p>
+
+<p>Clients should therefore distinguish between <strong>measuring the parcel</strong>, <strong>preparing the required survey documentation</strong> and <strong>completing the professional or statutory processes</strong> that may follow. Airban's <a class="link" href="packages.html">service packages</a> are structured around these different client needs.</p>
+
+<h2>Boundary First. Acreage Follows.</h2>
+<p>Whether a parcel is described as 1 acre, 100 acres or 500 acres, the fundamental surveying question remains the same: <strong>Where is the boundary, and what area does that boundary actually enclose?</strong></p>
+
+<p>Once that boundary has been properly identified, measured, processed and plotted, its area can be established. A professional survey should not be forced to confirm an expected acreage. The acreage should be allowed to emerge from the survey evidence.</p>
+
+</article>
+
+<aside class="sidebar">
+ <div class="side-stat"><span>Dromankese field evidence</span><strong>474.08 ac</strong><span>combined survey-derived extent across two parcels</span></div>
+ <div class="sidebox">
+  <h3>In this Insight</h3>
+  <a href="#acreage-output">Acreage as an output</a>
+  <a href="#boundary">Boundary identification</a>
+  <a href="#monumentation">Monumentation</a>
+  <a href="#gnss">GNSS observations</a>
+  <a href="#processing">CORS processing</a>
+  <a href="#geometry">Boundary geometry</a>
+  <a href="#field-example">Dromankese example</a>
+  <a href="#real-acreage">Which acreage is real?</a>
+ </div>
+ <div class="sidebox">
+  <h3>Project Evidence</h3>
+  <a href="dromankese-cadastral-survey-bono-east.html">AE-FJ-001 case study →</a>
+  <a href="services.html">Boundary & cadastral surveys →</a>
+  <a href="packages.html">Airban service packages →</a>
+ </div>
+</aside>
+</div>
+</section>
+
+<section class="related">
+ <div class="container">
+  <span class="kicker">Continue Exploring</span>
+  <h2>Related Airban Insights & Services</h2>
+  <div class="related-grid">
+   <article class="related-card"><span>Due Diligence</span><h3>Why You Should Survey Before Buying Land</h3><a href="why-survey-before-buying.html">Read Insight →</a></article>
+   <article class="related-card"><span>Verification</span><h3>Official Search Report in Ghana</h3><a href="official-search-report-ghana.html">Read Insight →</a></article>
+   <article class="related-card"><span>Land Process</span><h3>Land Registration Process in Ghana</h3><a href="land-registration-process-ghana.html">Read Insight →</a></article>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container cta-grid">
+  <div><span class="kicker">Need the actual extent of a parcel established?</span><h2>Let the boundary evidence answer the question.</h2><p>Airban Engineering provides cadastral surveying, boundary verification, topographic surveying and geospatial services for landowners, buyers, developers and organisations across Ghana.</p></div>
+  <a href="/#contact">Request a Survey Consultation</a>
+ </div>
+</section>
+</main>
+
+<footer><div class="container footer-row"><span>© 2026 Airban Engineering. All rights reserved.</span><span>Airban Insight · Boundary → Acreage</span></div></footer>
+</body>
+</html>
